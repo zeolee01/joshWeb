@@ -1,0 +1,105 @@
+.bgcolor {
+  background-color: #fafafa;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.firstDiv {
+  height: 60%;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.firstDiv h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.firstDiv p {
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #737373;
+}
+.secondDiv {
+  height: 40%;
+  background-color: #c7eacc;
+  width: 100%;
+  z-index: 0;
+}
+
+.position_mid {
+  /* width: 70%; */
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.video-container {
+  width: 60%;
+  height: 13rem;
+  z-index: 1;
+  overflow: cover;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 877px;
+  height: 442px;
+  gap: 30px;
+  border-radius: 5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+}
+
+.secondDiv {
+  width: 1440px;
+  height: 344px;
+  top: 516px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #c7eacc;
+}
+
+/* Style for the video element */
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: For rounded corners */
+}
+
+/* Style for the play/pause button */
+.play-pause-btn {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1ac073;
+  color: #f2f2f2;
+  padding: 1rem;
+}
+
+.play-pause-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}

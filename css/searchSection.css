@@ -1,0 +1,60 @@
+.sectionOne {
+  padding: 6rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: flex-start;  */
+  background-color: #1ac073;
+  color: white;
+}
+
+.block {
+  max-width: 40%;
+}
+
+.sectionOne div h1 {
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 82.03px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.sectionOne div p {
+  padding: 1rem 0;
+  width: 70%;
+}
+.sectionOne div img {
+  width: 100%; /* Ensure the image scales within its container */
+  height: auto;
+}
+.search-container {
+  width: 24rem;
+  display: flex; /* Use flexbox to align input and button together */
+  margin: 1rem 0;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Rounds the corners for the entire unit */
+  overflow: hidden; /* Ensures content stays within rounded borders */
+}
+
+.search-container input {
+  width: 100%; /* Automatically fill remaining space */
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #929292;
+  padding: 20px;
+}
+
+.searchbtn {
+  border: none;
+  background: #f3ba00;
+  color: white;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.searchbtn:hover {
+  background-color: #ffcb1e; /* Darker green on hover */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <div class="logo">JTGeats</div>
+      <div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#menu">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navLogo">
+        <button>
+          <img src="../images/JTGeats/Card.svg" alt="search icon" />
+        </button>
+        <button class="cart-button" id="cart-button">
+          <img src="../images/JTGeats/cart.svg" alt="cart icon" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Cart Overlay -->
+    <div class="overlay" id="cart-overlay">
+      <div class="cart-popup">
+        <img
+          src="../images/JTGeats/cart.svg"
+          alt="Cart Image"
+          srcset=""
+          class="cartImg"
+        />
+        <div class="cart-items">
+          <h1>Cart is Empty</h1>
+          <p>Add some items to the cart to checkout</p>
+        </div>
+        <button class="close-btn" id="close-cart">Back to Menu</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.formSection {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fa;
+}
+
+.formDiv {
+  margin: 0 4rem 0 0;
+}
+
+.nameDiv,
+.emailDiv {
+  width: 300px;
+  height: 58px;
+  padding: 10px 15px; /* Adjusted for consistency */
+  border: 1px solid #ddd; /* Added border for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #1b1c21; /* Ensures text color is consistent */
+}
+
+.msgDiv {
+  width: 617px;
+  height: 164px; /* Allow the height to adjust based on content */
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1b1c21;
+}
+
+.textadj_h6 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+  text-align: left;
+}
+
+.textadj_p {
+  font-size: 14px; /* Increased font size for better visibility */
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  margin-top: 0.4rem;
+  color: #1b1c21;
+}
+
+.space {
+  margin: 1.5rem 0 0 0;
+  border: none; /* Removed unnecessary border property */
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.inputDivs {
+  display: flex;
+  flex-direction: column; /* Stacks inputs vertically */
+  width: 617px;
+  margin: 0 auto;
+}
+
+.btnform {
+  display: block; /* Ensures proper alignment */
+  width: 10rem;
+  height: 3rem;
+  padding: 10px 20px; /* Spacing inside the button */
+  margin-top: 1rem; /* Space above the button */
+  background-color: #1ac073; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Removes border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btnform:hover {
+  background-color: #218838; /* Darker shade on hover */
+}

@@ -1,0 +1,162 @@
+/* Navbar Container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1ac073; /* Example: Teal background */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  padding-left: 5rem;
+  font-family: Squada One;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+
+/* Logo and Links */
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  gap: 3rem;
+}
+
+nav ul li a {
+  gap: 3rem;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Highlight color */
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ff9900;
+}
+.navLogo {
+  margin-right: 3rem;
+}
+.navLogo img {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.4rem;
+  cursor: pointer;
+}
+.cart-items {
+  margin-bottom: 2rem;
+}
+button {
+  background: none; /* Removes the background color */
+  border: 0; /* Removes the border */
+  padding: 0; /* Removes default button padding */
+  margin: 0; /* Removes default button margin */
+  cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 1000;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-popup {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  height: 92%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  /* Center text using Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+}
+
+.close-btn {
+  display: block;
+  width: 12rem;
+  height: 3rem;
+  margin: 2rem auto; /* Centers the button horizontally */
+  background-color: #1ac073; /* Example background color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.close-btn:hover {
+  background-color: #218838; /* Darker green for hover */
+}
+
+.disabled {
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+.cartImg {
+  height: 10rem;
+}
+
+.cart-popup h1 {
+  padding: 1rem 0 0.4rem 0;
+}
+
+.cart-popup p {
+  color: #aaa7a7;
+}

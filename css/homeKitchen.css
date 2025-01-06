@@ -1,0 +1,163 @@
+.kitchenSection {
+  padding: 5rem;
+
+  background-color: #f7f8fa;
+}
+.kitchenSection h1 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 3rem;
+  padding-left: 1.1rem;
+}
+
+.food-cards-container {
+  display: grid; /* Use CSS Grid */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px; /* Add some padding */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.food-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* White background for card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
+  max-width: 300px; /* Restrict the width of the card */
+  text-align: center;
+}
+
+.offer {
+  background-color: #f3ba00;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+}
+
+.offer p {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* Hover Effect */
+.food-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Food Image */
+.food-card__image {
+  width: 100%; /* Full width of card */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0.8rem;
+}
+
+.food-card-content {
+  padding: 1rem;
+}
+
+.food-card__position {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Food Name */
+.food-card__name {
+  font-size: 1rem; /* Larger font size */
+  font-weight: 300; /* Medium weight for name */
+  margin-bottom: 0.5rem;
+  color: #000; /* Dark gray text */
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* Food Price */
+.food-card__price {
+  font-size: 1rem;
+  color: #000; /* Dark gray text */
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+/* Rating Section */
+.food-card__rating {
+  display: flex;
+  gap: 0.3rem; /* Space between star icon and rating value */
+  margin-bottom: 0.7rem;
+  background-color: #f7f8fa;
+  margin-right: 0.4rem;
+  height: 1.4rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.food-card__star {
+  width: 16px; /* Small star icon size */
+  height: 16px;
+  display: inline;
+}
+
+.food-card__rating-value {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Delivery Time */
+.food-card__delivery-time {
+  font-size: 1rem;
+  font-weight: 400;
+  height: 1.4rem;
+  background-color: #f7f8fa;
+  border-left: 3px solid #bebebe;
+  border-right: 3px solid #bebebe;
+  border-radius: 6px;
+  padding: 0.1rem 0.3rem;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.addbtn {
+  height: 1.4rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.addbtn img {
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .food-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .food-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

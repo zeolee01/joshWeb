@@ -1,0 +1,212 @@
+.bgColor {
+  background-color: #f7f8fa;
+  padding-bottom: 3rem;
+}
+
+.bgColor h1 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 3rem;
+}
+
+/* Carousel container styles */
+.carousel-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+/* Track for cards */
+
+.carousel-track {
+  padding-top: 1rem;
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 110px;
+  justify-content: center;
+}
+
+/* Default styles for the middle card */
+.carousel-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the middle card */
+.carousel-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  z-index: 10; /* Ensure the card appears on top */
+}
+
+/* Individual food card styling */
+.food-card {
+  flex: 0 0 calc(50% - 50px); /* 4 cards per row */
+  /* width: 300px; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.food-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Carousel buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+.left-btn {
+  border: 2px solid #1ac073;
+  /* background-color: #1ac073; */
+  color: #1ac073;
+  padding: 0.6rem;
+  left: 10px;
+}
+
+.right-btn {
+  border: 1px;
+  background-color: #1ac073;
+  color: #f2f2f2;
+  padding: 1rem;
+  right: 10px;
+}
+
+.left-btn:hover {
+  border: 1px solid #1ac073;
+  background-color: #1ac073;
+  color: #f2f2f2;
+  padding: 0.6rem;
+  left: 10px;
+}
+
+.reqDish {
+  display: block;
+  width: 12rem;
+  height: 3rem;
+  margin: 0 auto; /* Centers the button horizontally */
+  background-color: #1ac073; /* Example background color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.reqDish:hover {
+  background-color: #218838; /* Darker green for hover */
+}
+/* CSS for pop up card */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 1000;
+  padding-top: 2rem;
+}
+
+.request-popup {
+  background: white;
+  padding: 4rem;
+  border-radius: 10px;
+  margin: auto;
+  width: 90%;
+  height: 85%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.request-popup h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#request-form input {
+  background-color: #f2f2f2;
+  border: 0px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+#request-form label {
+  color: #474747;
+  font-weight: 350;
+  margin: 2rem 0 0 0;
+}
+
+#request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttonDivs {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Aligns buttons vertically */
+  gap: 10px; /* Reduced gap between buttons */
+  margin-top: 8rem; /* Space above the buttons */
+}
+
+.close-btn,
+.submit-dish {
+  width: 12rem; /* Explicit width */
+  height: 3rem; /* Explicit height */
+  margin: 0; /* Remove any default margins */
+  padding: 10px 20px; /* Consistent padding */
+  font-size: 16px; /* Same font size for both */
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding and border are included in size */
+}
+
+.close-btn {
+  background: #ffffff;
+  color: #1ac073;
+  border: 2px solid #1ac073;
+}
+
+.close-btn:hover {
+  background: #1ac073;
+  color: #ffffff;
+}
+
+.submit-dish {
+  background-color: #1ac073; /* Green background */
+  color: #ffffff;
+  border: none;
+}
+
+.submit-dish:hover {
+  background-color: #218838; /* Darker green for hover */
+}

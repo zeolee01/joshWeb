@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/popularItems.css" />
+    <title>Food Carousel</title>
+  </head>
+  <body>
+    <section class="bgColor">
+      <h1>Popular Items</h1>
+
+      <div class="carousel-container">
+        <button class="carousel-btn left-btn">&#x25C0;</button>
+        <div class="carouselCard">
+          <div class="carousel-track"></div>
+        </div>
+        <button class="carousel-btn right-btn">
+          &#x25B6
+        </button>
+      </div>
+
+      <button class="reqDish" id="request-dish-btn">Request a Dish</button>
+    </section>
+
+    <!-- Request a Dish Overlay -->
+    <div class="overlay" id="request-dish-overlay">
+      <div class="request-popup">
+        <h1>Request a Dish</h1>
+        <form id="request-form">
+          <label for="dish-name">Name*</label>
+          <input
+            type="text"
+            id="dish-name"
+            name="dish-name"
+            required
+            placeholder="Enter name of the dish"
+          />
+
+          <label for="comments">Upload an image</label>
+          <input id="comments" name="comments" placeholder="Paste a URL" />
+        </form>
+        <div class="buttonDivs">
+          <button class="close-btn" id="close-request-dish">Cancel</button>
+          <button class="submit-dish" id="submit-request-dish">
+            Submit Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
